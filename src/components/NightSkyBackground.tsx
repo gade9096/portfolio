@@ -24,7 +24,7 @@ const NightSkyBackground: React.FC = () => {
       const newStars: Star[] = [];
       
       // Regular twinkling stars
-      for (let i = 0; i < 200; i++) {
+      for (let i = 0; i < 300; i++) {
         newStars.push({
           id: i,
           x: Math.random() * window.innerWidth,
@@ -37,7 +37,7 @@ const NightSkyBackground: React.FC = () => {
       }
 
       // Shooting stars
-      for (let i = 200; i < 210; i++) {
+      for (let i = 300; i < 315; i++) {
         newStars.push({
           id: i,
           x: Math.random() * window.innerWidth,

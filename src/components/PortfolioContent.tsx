@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
+import { Github, Linkedin, Mail, ExternalLink, Code, Palette, Zap } from 'lucide-react';
 
 const PortfolioContent: React.FC = () => {
   return (
@@ -43,7 +43,7 @@ const PortfolioContent: React.FC = () => {
           </div>
 
           {/* Social Links */}
-          <div className="flex justify-center space-x-8">
+          <div className="flex justify-center space-x-8 mb-20">
             <a 
               href="#" 
               className="p-3 rounded-full bg-white/10 text-white hover:bg-white/20 transition-all duration-300 hover:scale-110 backdrop-blur-sm"
@@ -62,6 +62,33 @@ const PortfolioContent: React.FC = () => {
             >
               <Mail className="w-6 h-6" />
             </a>
+          </div>
+
+          {/* Skills Section */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="group p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300">
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-blue-400 to-cyan-400 mb-4 group-hover:scale-110 transition-transform">
+                <Code className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold text-white mb-2">Development</h3>
+              <p className="text-white/70">Full-stack development with modern frameworks and cutting-edge technologies.</p>
+            </div>
+
+            <div className="group p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300">
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 mb-4 group-hover:scale-110 transition-transform">
+                <Palette className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold text-white mb-2">Design</h3>
+              <p className="text-white/70">Creating beautiful, intuitive interfaces that users love to interact with.</p>
+            </div>
+
+            <div className="group p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300">
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-green-400 to-emerald-400 mb-4 group-hover:scale-110 transition-transform">
+                <Zap className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-xl font-semibold text-white mb-2">Performance</h3>
+              <p className="text-white/70">Optimizing applications for speed, scalability, and exceptional user experience.</p>
+            </div>
           </div>
         </div>
       </main>
